@@ -11,17 +11,13 @@
 
 # Hint:  Use the int() function to convert the string returned from input() into an integer
 
-# age = input("Input a dogs age in human years: ")
-# dogAge = 0;
-# if age == 1:
-#     dog_age = 10
-# elif age == 2:
-#     dog_age = 20
-# else:
-#     dog_age = 20 + 7*(float(age)-2)
-# print("The dog's age in dog years is " +str(dog_age))
+age = input("Input a dogs age in human years: ")
+dogAge = 0;
+if age <= 2:
+    dog_age = age * 10
+else:
+    dog_age = 20 + 7*(float(age)-2)
+print("The dog's age in dog years is " +str(dog_age))
 
 
 
-phrase = input("Please enter a word or phrase:")
-print(f'What you entered is {len(phrase)} characters long')
